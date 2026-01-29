@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+<title>Medieval Minds</title>
+<body style="background-color:#303030;">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="WebsiteLogo" href="WebsiteLogo.png">
+
+
+<body>
+<ul>
+	<li><h1>Medieval Minds</h1></li>
+		<img src="WebsiteLogo.png" height="40">
+			<li><a href="index.html" target=_self>Home</a></li>
+		<li><a href="#">Projects</a>
+		<ul class="dropdown">
+			<li><a href="labprojects.html" target=_self>University Lab Projects</a></li>
+			<li><a href="proj1.html" target=_self>Sun Of A Gun</a></li>
+			<li><a href="proj2.html" target=_self>Restaurant Brawl</a></li>
+			<li><a href="proj3.html" target=_self>Medieval Minds</a></li>
+	</ul>
+</li>
+</ul>
+
+
+
+
+<div class="container">
+	<div class="textbox">
+		<h1>Medieval Minds: Exploring The Tower</h1>
+		<h2>Semester 2 Project</h2>
+		<h3>Role: Asset Designer</h3>
+	</div>
+			<div class="textbox">
+		<img src="MedievalMinds.png">
+		<p>Medieval Minds: Exploring The Tower is a virtual reality tour experience around the courtyard and first floor of the Tower of London. The game is intended as educational material for teachers and students interested in a historical - specifically medieval setting. The project would be compiled on Unity, and the assets would be made on Blender and Autodesk 3ds Max.</p>
+		<img src="TowerOfLondon.png">
+		</div>
+		<div class="textbox">
+		<p>My contribution to this project was mostly smaller 3D assets, things which could be interacted with, picked up and thrown, all of which made in Blender. Partway through, I would also create an interior of the Tower itself. For this project, I planned a trip to personally visit the Tower of London to understand better what I was making as well as get ideas for assets I would have otherwise not made.</p>
+		<h2>The Concept</h2>
+		<p>We decided to limit the play area to just the courtyard before the entrance to the White Tower, as we believed we didn't have the time nor the skill to work on the more complicated buildings in the inner walls of the Castle. This also helped focus our attention to the most crucial details we could immediately see.</p>
+		<img src="TowerOfLondonPlan.png">
+		<br>
+		<h2>The Assets</h2>
+		<p>Because of the Medieval setting of the project, the first asset that came to mind was a sword and executioner's axe, as well as a pair of manacles. Beside being period approriate tools they were simple to make and fit with the nature of the Tower of London being a Fortress and a Prison.</p> 
+		<br>
+		<p>For these, I used images I found on the web and simply modelled the weapons directly on the images to get as accurate a shape as I could.</p>
+		<br>
+				<img src="SwordReal.png">
+				<img src="Sword.png">
+				<img src="Axe.png">
+		<p>The manacles required some use of Modifiers. The chains of the manacles were stretched toruses rotated by relative offset with an array modifer, then bound to a bezier curve which allowed it to curve easily.</p>	
+				<img src="ChainBezier.png">
+				<img src="Manacles.png">	
+		<br>
+		<p>The wooden pillory was my first experiment with Booleans. Applying the Boolean modifier to the pillory, then placing over a few cylinders, I could cut out perfect circles for where the arms and head would be.</p>
+		<img src="BooleanTest.png">
+		<img src="BooleanTestFinish.png">
+
+		</div>
+		<div class="textbox">
+		<p>The compilation of the intial wave of assets, comprising of a wooden platform, the Sword, an Axe, the Manacles and a Pillory. Overall, these took around two hours to make.</p>
+		<br>
+		<img src="Pillory.png">
+		</div>
+		<div class="textbox">
+		<h2>After the Trip to London</h2>
+		<p>I primarily looked for assets to take pictures of during my trip. Below is a few that I made into models, many of which are found in the 'Medieval Palace' section of the Tower of London, the recreation of King Edward 1st 'Longshanks's bedroom, a towering man at 6'2" famous for fighting the Scottish rebel William Wallace. This will not contain every single model made for this project.</p>
+				<img src="LondonChalice.png">
+				<img src="Chalice.png">
+				<img src="Candlestick.png">
+				<img src="LondonCandlestickLarge.png">
+				<img src="LargeCandlestick.png">
+		</div>
+		<div class="textbox">
+		<h2>The Table</h2>
+		<p>For something to put all of my small assets on, I made a replica of the table found in the bedroom. My immediate issue was the table had a white cloth over it, and I hadn't touched physics in Blender yet. Firstly, I created a simple plane, to which I then subdivided four times so it would better fold around the table</p>
+		<br>
+		<img src="TableCloth.png">
+		<img src="TableSubdivided.png">
+		<br>
+		<p>Then, by applying collision to the Table itself, I allowed Blender to run and have the cloth fall and fold around. Then I simply 'applied' the folded state of the cloth. To make the cloth look less jagged and polygonal, I added a Subdivision modifier, increasing the viewport to make for a smoother cloth.</p>
+		<img src="TableCollision.png">
+		<img src="TableUnSubDiv.png">
+		<img src="TableSubDiv.png">
+		<img src="SubdivisionModifier.png">
+		<br>
+		<p>Compiled in a fashion loosely inspired by the picture of the real table.</p>
+		<br>
+		<img src="TableImage.png">
+		<img src="TableWithStuff.png">
+		</div>
+		<div class="textbox">
+		<h2>The White Tower</h2>
+		<p>Despite my primary task being to make smaller assets, I decided that, due to a lack of assets and a lack of time, that I would make a singular interior space as a way to hide most of the imperfections of the map. This was also a way for us to put many of the smaller assets - such as the tables, chalice and candlesticks indoors. This was also a challenge to my own ability, as I hadn't made a building before this and was interested to see what I could do. For this task, I found plans of the White Tower's interior, as well as a cutaway image found during my trip to the tower itself as a reference.</p>
+		<br>
+		<img src="WhiteTowerPlan.png">
+		<img src="WhiteTowerInterior.png">
+		<br>
+		<p>Initially, I tried to simply subdivide a cube until I could get the correct shapes I wanted for the entrances, exits and windows. I quickly found that to be impossible and chose instead to experiment with making complicated Booleans instead. This helped with creating the arches, and was a enlightening learning experience.</p>
+		<br>
+		<img src="ExperimentingwithBooleans.png">
+		<p>With the booleans finished, I moved onto the pillars, floor boards and roof supports. Saving on performance and time, these were done using the Array modifier allowing me to place and space multiple pillars, floor boards and supports with a singular entity.</p> 
+		<img src="BooleansandArrays.png">
+		<img src="AlmostComplete.png">
+		<p>With the room almost finished, I checked the Face Orientation to see if any of the objects had the wrong Normals (Red faces as opposed to Blue) which would result in them appearing invisible when ported to Unity.</p>
+		<img src="TowerNormals.png">
+		<p>With most of the easily visible normals fixed, I created a mock-up of the Tower and its immediate environment to see how the assets would fit relative to one-another</p>
+		<img src="MockUp.png">
+		</div>
+		<div class="textbox">
+		<h2>The Final Collection of Items</h2>
+		<img src="TowerPresentation.png">
+		</div>
+
+
+</div>
+
+</div>
+</body>
+
+
+
+<html>
